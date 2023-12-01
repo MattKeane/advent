@@ -7,9 +7,4 @@ def get_calibration_value(line):
     digits = re.findall(r'\d', line)
     return int(digits[0] + digits[-1])
 
-sum = 0
-
-for line in lines:
-    sum += get_calibration_value(line)
-
-print(sum)
+total = sum([get_calibration_value(line) for line in lines])
