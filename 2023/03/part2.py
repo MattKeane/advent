@@ -21,9 +21,6 @@ class PartNumber(Item):
         return self.number
 
 class Asterisk(Item):   
-    def show_span(self):
-        print(self.span)
-
     def get_gear_ratio(self):
         neighbors = []
         for i in range(self.row - 1, self.row + 2):
