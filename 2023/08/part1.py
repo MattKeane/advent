@@ -21,6 +21,7 @@ class Node:
         steps = 0
         while current.address != 'ZZZ':
             for direction in directions:
+                print(steps)
                 steps += 1
                 current = current.move(direction)
                 if current.address == 'ZZZ':
